@@ -2097,6 +2097,127 @@ input, select, textarea {
 				background: #3B353C;
 			}
 
+/*Resume Button*/
+.sbutton,
+a.sbutton,
+button.sbutton,
+input[type="submit"].sbutton,
+input[type="reset"].sbutton,
+input[type="button"].sbutton {
+  display: inline-block;
+  font-family: "poppins-bold", sans-serif;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+  height: 5.4rem;
+  line-height: 5.4rem;
+  padding: 0 3rem;
+  margin: 0 0.3rem 1.2rem 0;
+  background: #d8d8d8;
+  color: #313131;
+  text-decoration: none;
+  cursor: pointer;
+  text-align: center;
+  white-space: nowrap;
+  border: none;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.sbutton:hover,
+a.sbutton:hover,
+button.sbutton:hover,
+input[type="submit"].sbutton:hover,
+input[type="reset"].sbutton:hover,
+input[type="button"].sbutton:hover,
+.sbutton:focus,
+button.sbutton:focus,
+input[type="submit"].sbutton:focus,
+input[type="reset"].sbutton:focus,
+input[type="button"].sbutton:focus {
+  background: #bebebe;
+  color: #000000;
+  outline: 0;
+}
+
+.sbutton.sbutton-primary,
+a.sbutton.sbutton-primary,
+button.sbutton-primary,
+input[type="submit"].sbutton-primary,
+input[type="reset"].sbutton-primary,
+input[type="button"].sbutton-primary {
+  background: #313131;
+  color: #ffffff;
+}
+
+.sbutton.sbutton-primary:hover,
+a.sbutton.sbutton-primary:hover,
+button.sbutton-primary:hover,
+input[type="submit"].sbutton-primary:hover,
+input[type="reset"].sbutton-primary:hover,
+input[type="button"].sbutton-primary:hover,
+.sbutton.sbutton-primary:focus,
+button.sbutton-primary:focus,
+input[type="submit"].sbutton-primary:focus,
+input[type="reset"].sbutton-primary:focus,
+input[type="button"].sbutton-primary:focus {
+  background: #1f1f1f;
+}
+
+button.sbutton.full-width,
+.sbutton.full-width {
+  width: 100%;
+  margin-right: 0;
+}
+
+button.sbutton.medium,
+.sbutton.medium {
+  height: 5.7rem !important;
+  line-height: 5.7rem !important;
+  padding: 0 1.8rem !important;
+}
+
+button.sbutton.large,
+.sbutton.large {
+  height: 6rem !important;
+  line-height: 6rem !important;
+  padding: 0rem 3rem !important;
+}
+
+button.sbutton.stroke,
+.sbutton.stroke {
+  background: transparent !important;
+  border: 3px solid #313131;
+  line-height: 4.8rem;
+}
+
+button.sbutton.stroke.medium,
+.sbutton.stroke.medium {
+  line-height: 5.1rem !important;
+}
+
+button.sbutton.stroke.large,
+.sbutton.stroke.large {
+  line-height: 5.4rem !important;
+}
+
+button.sbutton.stroke:hover,
+.sbutton.stroke:hover {
+  border: 3px solid #ff0077;
+  color: #ff0077;
+}
+
+button.sbutton::-moz-focus-inner,
+input.sbutton::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+
+
 /* Post */
 
 	.post.stub {
@@ -2191,7 +2312,7 @@ input, select, textarea {
 
 	#header {
 		position: relative;
-		background-image: url("../../images/header.jpg");
+		background-image: url("../../images/Um.jpg");
 		background-size: cover;
 		background-position: center center;
 		background-attachment: fixed;
@@ -2519,120 +2640,122 @@ input, select, textarea {
 
 /* Carousel */
 
-	.carousel {
-		position: relative;
-		overflow: hidden;
-		padding: 2em 0 2em 0;
-		margin-bottom: 0;
-	}
+.carousel {
+    position: relative;
+    overflow: hidden;
+    padding: 2em 0 2em 0;
+    margin-bottom: 0;
+}
 
-		.carousel .forward, .carousel .backward {
-			position: absolute;
-			top: 50%;
-			width: 6em;
-			height: 12em;
-			margin-top: -6em;
-			cursor: pointer;
-		}
+.carousel .forward, .carousel .backward {
+    position: absolute;
+    top: 50%;
+    width: 6em;
+    height: 12em;
+    margin-top: -6em;
+    cursor: pointer;
+}
 
-			.carousel .forward:before, .carousel .backward:before {
-				content: '';
-				display: block;
-				width: 6em;
-				height: 6em;
-				border-radius: 100%;
-				background-color: rgba(72, 57, 73, 0.5);
-				position: absolute;
-				top: 50%;
-				margin-top: -3em;
-				-moz-transition: background-color 0.35s ease-in-out;
-				-webkit-transition: background-color 0.35s ease-in-out;
-				-o-transition: background-color 0.35s ease-in-out;
-				-ms-transition: background-color 0.35s ease-in-out;
-				transition: background-color 0.35s ease-in-out;
-				-webkit-backface-visibility: hidden;
-			}
+.carousel .forward:before, .carousel .backward:before {
+    content: '';
+    display: block;
+    width: 6em;
+    height: 6em;
+    border-radius: 100%;
+    background-color: rgba(72, 57, 73, 0.5);
+    position: absolute;
+    top: 50%;
+    margin-top: -3em;
+    -moz-transition: background-color 0.35s ease-in-out;
+    -webkit-transition: background-color 0.35s ease-in-out;
+    -o-transition: background-color 0.35s ease-in-out;
+    -ms-transition: background-color 0.35s ease-in-out;
+    transition: background-color 0.35s ease-in-out;
+    -webkit-backface-visibility: hidden;
+}
 
-			.carousel .forward:after, .carousel .backward:after {
-				content: '';
-				width: 3em;
-				height: 3em;
-				position: absolute;
-				top: 50%;
-				margin: -1.5em 0 0 0;
-				background: url("images/arrow.svg") no-repeat center center;
-			}
+.carousel .forward:after, .carousel .backward:after {
+    content: '';
+    width: 3em;
+    height: 3em;
+    position: absolute;
+    top: 50%;
+    margin: -1.5em 0 0 0;
+    background: url("images/arrow.svg") no-repeat center center;
+}
 
-			.carousel .forward:hover:before, .carousel .backward:hover:before {
-				background-color: rgba(239, 131, 118, 0.75);
-			}
+.carousel .forward:hover:before, .carousel .backward:hover:before {
+    background-color: rgba(239, 131, 118, 0.75);
+}
 
-		.carousel .forward {
-			right: 0;
-		}
+.carousel .forward {
+    right: 0;
+}
 
-			.carousel .forward:before {
-				right: -3em;
-			}
+.carousel .forward:before {
+    right: -3em;
+}
 
-			.carousel .forward:after {
-				right: -0.25em;
-			}
+.carousel .forward:after {
+    right: -0.25em;
+}
 
-		.carousel .backward {
-			left: 0;
-		}
+.carousel .backward {
+    left: 0;
+}
 
-			.carousel .backward:before {
-				left: -3em;
-			}
+.carousel .backward:before {
+    left: -3em;
+}
 
-			.carousel .backward:after {
-				left: -0.25em;
-				-moz-transform: scaleX(-1);
-				-webkit-transform: scaleX(-1);
-				-ms-transform: scaleX(-1);
-				transform: scaleX(-1);
-			}
+.carousel .backward:after {
+    left: -0.25em;
+    -moz-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    -ms-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
 
-		.carousel .reel {
-			white-space: nowrap;
-			position: relative;
-			-webkit-overflow-scrolling: touch;
-			padding: 0 2em 0 2em;
-		}
+.carousel .reel {
+    white-space: nowrap;
+    position: relative;
+    -webkit-overflow-scrolling: touch;
+    padding: 0 2em 0 2em;
+}
 
-		.carousel article {
-			display: inline-block;
-			width: 18em;
-			background: #fff;
-			text-align: center;
-			padding: 0 1em 3em 1em;
-			margin: 0 2em 0 0;
-			white-space: normal;
-			opacity: 1.0;
-			-moz-transition: opacity 0.75s ease-in-out;
-			-webkit-transition: opacity 0.75s ease-in-out;
-			-ms-transition: opacity 0.75s ease-in-out;
-			transition: opacity 0.75s ease-in-out;
-		}
+.carousel article {
+    display: inline-block;
+    width: 18em;
+    background: #fff;
+    text-align: center;
+    padding: 0 1em 3em 1em;
+    margin: 0 2em 0 0;
+    white-space: normal;
+    opacity: 1.0;
+    -moz-transition: opacity 0.75s ease-in-out;
+    -webkit-transition: opacity 0.75s ease-in-out;
+    -ms-transition: opacity 0.75s ease-in-out;
+    transition: opacity 0.75s ease-in-out;
+}
 
-			.carousel article.loading {
-				opacity: 0;
-			}
+.carousel article.loading {
+    opacity: 0;
+}
 
-			.carousel article .image {
-				position: relative;
-				left: -1em;
-				top: 0;
-				width: auto;
-				margin-right: -2em;
-				margin-bottom: 3em;
-			}
+.carousel article .image {
+    position: relative;
+    left: -1em;
+    top: 0;
+    width: auto;
+    margin-right: -2em;
+    margin-bottom: 3em;
+}
 
-			.carousel article p {
-				text-align: center;
-			}
+.carousel article p {
+    text-align: center;
+    max-height: 100px; /* Adjust this value as needed */
+    overflow: auto;
+}
 
 /* Wide */
 
